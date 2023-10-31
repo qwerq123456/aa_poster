@@ -11,11 +11,9 @@ export interface SongDataType {
     drum: string;
   };
 }
-interface SetListType {
-  [key: number]: SongDataType;
-}
-export const setList : SetListType = {
-  0 : {
+
+export const setList : SongDataType[] = [
+  {
     'title' : '오늘이야',
     'artist' : '유다빈 밴드',
     'session' : {
@@ -27,7 +25,7 @@ export const setList : SetListType = {
       'drum' : '김민주',
     }
   },
-  1 : {
+  {
     'title' : 'quasimodo',
     'artist' : '브로큰발렌타인',
     'session' : {
@@ -39,4 +37,4 @@ export const setList : SetListType = {
       'drum' : '김민주',
     }
   }
-}
+];
