@@ -1,18 +1,18 @@
-interface SetListType {
-  [key: number]: {
-    title: string;
-    artist: string;
-    session: {
-      vocal: string;
-      guitar1: string;
-      guitar2: string;
-      bass: string;
-      keyboard1: string;
-      keyboard2?: string;
-      drum: string;
-    };
+export interface SongDataType {
+  title: string;
+  artist: string;
+  session: {
+    vocal: string;
+    guitar1: string;
+    guitar2: string;
+    bass: string;
+    keyboard1: string;
+    keyboard2?: string;
+    drum: string;
   };
-
+}
+interface SetListType {
+  [key: number]: SongDataType;
 }
 export const setList : SetListType = {
   0 : {

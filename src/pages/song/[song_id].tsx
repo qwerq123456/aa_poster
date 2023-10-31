@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { setList } from '@/constants/setlist';
+import { setList } from '@/constants';
 import { useRouter } from 'next/router'
 
 const SongDetailPage = () => {
